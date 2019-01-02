@@ -40,13 +40,12 @@
         <ul>
             <li><a class="button" href="http://www.baidu.com" target="content">度娘</a></li>
             <li><a class="button" href="file/blogs" target="content">水帖</a></li>
+            <li><a class="button" href="/file/picture/">每日美图</a></li>
             <li><a class="button" href="http://www.runoob.com/html/html-tutorial.html" target="content">菜鸟教程</a></li>
-            <li><a class="button" href="">每日美图</a></li>
         </ul>
     </div>
 	<div id = "content">
 		<iframe src="./file" frameborder="0" name="content"></frame>
 	</div>
-
 </body>
 </html>
