@@ -1,14 +1,8 @@
-<!doctype html>
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-</head>
-<body>
-	
 <?php
-echo '该文件位于 "'.__FILE__.'"';
-?>	
-</body>
-
-</html>
+$dir="./img/";
+$filename="1.jpg";
+$f_url=$dir.$filename;
+$fileres = file_get_contents($dir.$filename);
+header('Content-type: image/jpeg');
+echo $fileres;
+ ?>

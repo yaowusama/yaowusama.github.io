@@ -9,12 +9,12 @@ $(document).ready(function(){
 				opacity:"0.9",
 				top:"0",
 				bottom:"0"
-			},2000);
+			},"slow");
 		});
 		$("#submit").on("click",function(){
 			$("#background").css("display","none");
 			$("#login").css("display","none");
-			var name=$(document).cookie("name")
+			var name = $(document).cookie("name")
 			if (name) {
 				console.log("logged");
 				$("#login_button").text("退出");
