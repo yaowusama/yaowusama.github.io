@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>new | 博客</title>
+</head>
+<body>
+<h1>New post</h1>
+
+<form action="save.php" method="post">
+	<select name="catalog">
+		<option value="all">all</option>
+        <option value="技术贴">技术贴</option>
+        <option value="分享">分享</option>
+	</select>
+	<label for="title">title</label>
+	<input type="text" name="title" value="" />
+	<br/>
+	<label for="body">body</label>
+	<textarea name="body"></textarea>
+	<br/>
+	<input type="file" name="myfile">
+	<br>
+	<input type="submit" value="提交" />
+</form>
+
+</body>
+</html>

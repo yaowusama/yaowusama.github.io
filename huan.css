@@ -1,0 +1,161 @@
+#background{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	opacity: 0.6;
+	display: none;
+	z-index: 14;
+}
+#form{
+	margin-top: 20px;
+}
+#login p{
+	color:red;
+	opacity: 0.9;
+}
+#login{
+	position:fixed;
+	left:0;
+	right:0;
+	margin:auto;
+	width: 400px;
+	height: 300px;
+	z-index: 15;
+
+	display: none;
+	top: 100%;
+	opacity: 0;
+
+	//padding:50px 0 0 0; 
+	border-radius:20px;
+    box-shadow:0px 0px 5px #ff9a3c;
+	background-color: #ffb86d;
+
+}
+.content{
+	margin: auto;
+	text-align: center;
+}
+.button_login{
+	color: #fff;
+	background-color: #09bcbf;
+	padding: 3px 6px;
+	border: 1px solid #09c0c3;
+	border-radius:3px;
+	box-shadow: 0px 0px 5px #ddd;
+	text-shadow: 0px 0px 1px #999;
+	font-size: 15px;
+	margin:auto;
+}
+.button_login:hover{
+	color: #fff;
+	background-color: #0ad1d4;
+	padding: 3px 6px;
+	border: 1px solid #0ad1d4;
+	border-radius:3px;
+	box-shadow: 0px 0px 5px #ddd;
+	text-shadow: 0px 0px 1px #999;
+	font-size: 15px;
+	margin:auto;
+}
+.button{
+	margin:0;
+	padding:8px 16px;
+	color: #fefefe;
+	background-color: #555;
+	display: block;
+}
+.button:hover{
+	background-color: #fefefe;
+    color: #555;
+}
+#header{
+	background-color: #555;
+	height: 50px;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+}
+#tag_list{
+	width: 150px;
+	height: 100%;
+	background-color: #555;
+	float: left;
+}
+#tag_list ul{
+	list-style: none;
+	margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+#tag_list>ul>li{
+	line-height: 30px;
+	text-align: center;
+}
+#content{
+	border-radius:20px;
+	background-color: white;
+	height: 100%;
+	margin-left: 150px;
+}
+#content iframe{
+	display: block;
+	border: 0px;
+	height: 100%;
+	width: 100%;
+}
+#fixed{
+	padding: 8px;
+	position: fixed;
+	bottom: 30px;
+	right: 40px;
+	background-color: #cccccc;
+}
+
+canvas{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+
+  z-index: 2;
+  touch-action: none; 
+}
+h1{
+	display: inline;
+	margin:0 0;
+}
+p{
+	margin:0 0;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+html,body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+input[type="text"]{
+  margin:auto;
+  box-sizing: border-box;
+  text-align:center;
+  font-size:18px;
+  height:40px;
+  width: 100px;
+  border-radius:4px;
+  border:1px solid #c8cccf;
+  color:#6a6f77;
+  display:block;
+  outline:0;
+  padding:0 1em;
+  text-decoration:none;
+  width:63%;
+}
+input[type="text"]:focus{
+  border:1px solid #ff7496;
+}

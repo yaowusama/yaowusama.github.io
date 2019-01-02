@@ -1,0 +1,47 @@
+#img{
+	float: left;
+	height: 100px;
+}
+#intc{
+	margin-left: 110px;
+	height: 100px;
+}
+.item{
+	height: 130px;
+	width: 100%; 
+	font-size: 20px;
+
+	background-color: #ddffff;
+    padding: 8px 16px;
+    border-left: 10px solid #66ccff;
+}
+.item>div p{
+	display: block;
+}
+.item img{
+	height:100%;
+}
+
+
+
+
+a{
+		text-decoration: none;
+		z-index: 50;
+		/*color: #FF0000;*/
+}
+p,h4{
+	margin:0px;
+	display: inline;
+}
+ul{
+	list-style: none;
+	margin:0px;
+	padding: 0px;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
