@@ -12,6 +12,19 @@
     require_once './inc/user.php';
 //分类功能
 //判断all
+    require_once "./inc/db.php";
+    $sql="select count(id) as total from blogs";
+    $query=$db->query($sql);
+    $obj=$query->fetchObject();
+    $blog_num=$obj->total;
+
+
+    if (isset($_GET['page'])) {
+      $curr=($_GET['page']-1)*5;
+    }else{
+      $curr=0;
+    }
+
     if(isset($_POST["catalog"])){
       $catalog=$_POST["catalog"];
       if ($catalog=='all') {
@@ -22,6 +35,7 @@
     }else{
       $sql="select * from blogs";
     }
+    $sql=$sql." limit $curr,5 ";
     $query=$db->query($sql);
     ?>
     <form action="./" method="post" >
@@ -57,12 +71,27 @@
       </div>
     </a>
     <hr>
-  <?php  
-    }
+  <?php } ?>
+  <ul id="page">
+    
+    <?php 
+      $page=1;
+      do{
+    ?>  
+
+    <a href="./index.php?page=<?php echo $page; ?>"><li><?php echo $page; ?></li></a>
+    
+    <?php
+      $page++;
+      }while(($blog_num-=5)>0)
+    ?>
+    <a href="./index.php?page=<?php echo (int)($curr/5)+2; ?>"><li>></li></a>
+  </ul>
+  <br>
+  <?php 
     if (logged()) {
       echo "<a href='src/new.html'>新增</a>";    
     }
    ?>
-  
 </body>
 </html>

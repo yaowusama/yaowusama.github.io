@@ -46,12 +46,21 @@
           <br>
 
           <?php
+          if (!empty($post->filename)) {
+            $dir="./upload/";
+            $filename=$post->filename;
+            $f_url=$dir.$filename;
+            echo "<img src=$f_url>";
+          }
+            
+
             $id=$_GET['id'];
             if (logged()&&($user->name==$post->author||$user->power>=5)){
               echo  "<a href=edit.php?id=$id>改</a>".
                     "<a href=del.php?id=$id>删</a>";
             }
           ?>
+
           <hr>
 
           <h4>评论列表</h4>
