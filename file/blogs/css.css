@@ -1,13 +1,13 @@
 #img{
 	float: left;
-	height: 100px;
+	height: 80px;
 }
 #intc{
 	margin-left: 110px;
-	height: 100px;
+	height: 80px;
 }
 .item{
-	height: 130px;
+	height: 110px;
 	width: 100%; 
 	font-size: 20px;
 

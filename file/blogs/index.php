@@ -28,12 +28,12 @@
     if(isset($_POST["catalog"])){
       $catalog=$_POST["catalog"];
       if ($catalog=='all') {
-        $sql="select * from blogs";
+        $sql="select * from blogs order by id desc";
       }else{
-        $sql="select * from blogs where catalog = '{$catalog}'";
+        $sql="select * from blogs where catalog = '{$catalog}' order by id desc";
       }
     }else{
-      $sql="select * from blogs";
+      $sql="select * from blogs order by id desc";
     }
     $sql=$sql." limit $curr,5 ";
     $query=$db->query($sql);
@@ -74,11 +74,11 @@
   <?php } ?>
   <ul id="page">
     
+    <a href="./index.php?page=1"><li>首页</li></a>
     <?php 
       $page=1;
       do{
     ?>  
-
     <a href="./index.php?page=<?php echo $page; ?>"><li><?php echo $page; ?></li></a>
     
     <?php
