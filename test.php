@@ -1,8 +1,5 @@
 <?php
-$dir="./img/";
-$filename="1.jpg";
-$f_url=$dir.$filename;
-$fileres = file_get_contents($dir.$filename);
-header('Content-type: image/jpeg');
-echo $fileres;
- ?>
+		require_once "./inc/db.php";
+		$sql="select * from blogs limit 0,10 order by id desc";
+		$query=$db->query($sql);
+?>
